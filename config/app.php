@@ -144,7 +144,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-    	laracasts\Flash\FlashServiceProvider::class,
+    	Laracasts\Flash\FlashServiceProvider::class,
     	Collective\Html\HtmlServiceProvider::class,
 
     ],
