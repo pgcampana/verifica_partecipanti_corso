@@ -15,8 +15,8 @@
 	@endif
 </div>
 <div class="form-group">
-	{!! Form::label('phone number', 'telefono') !!
-	{!! Form::phone number('telefono', ['class' => 'form-control']) !!}
+	{!! Form::label('phone', 'telefono') !!}
+	{!! Form::text('phone', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group">
 	{!! Form::submit($submitButtonText, ['class' => 'btn btn-primary form-control']) !!}

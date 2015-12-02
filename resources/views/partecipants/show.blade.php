@@ -11,6 +11,6 @@
 	<li>{{$partecipant->name}}</li>
 	<li>{{$partecipant->surname}}</li>
 	<li>{{$partecipant->email}}</li>
-	<li>{{$partecipant->phone number}}</li>
+	<li>{{$partecipant->phone}}</li>
 </ul>
 @stop

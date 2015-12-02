@@ -8,17 +8,17 @@ Index
 <h1>Partecipants</h1>
 @if (count($partecipants))
 <ul>
-	@foreach ($partecipant as $partecipant)
-		<partecipant>
-			<h2><a href="{{action('PartecipantsController@show', [$partecipant->id])}}">{{$partecipant->name}}</a><h2>
+	@foreach ($partecipants as $partecipant)
+		<div>
+			<h2><a href="{{action('PartecipantsController@show', [$partecipant->id])}}">{{$partecipant->name}}</a></h2>
 			<ul>
 				<li>{{$partecipant->id}}</li>
 				<li>{{$partecipant->name}}</li>
 				<li>{{$partecipant->surname}}</li>
 				<li>{{$partecipant->email}}</li>
-				<li>{{$partecipant->phone number}}</li>
+				<li>{{$partecipant->phone}}</li>
 			</ul>
-		</partecipant>
+		</div>
 	@endforeach
 </ul>
 @else

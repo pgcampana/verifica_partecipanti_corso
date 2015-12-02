@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Partecipant;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PartecipantRequest;
+use Illuminate\Http\JsonResponse;
 
 class PartecipantsController extends Controller
 {
@@ -22,7 +23,7 @@ class PartecipantsController extends Controller
 	 */
  public function index(Request $request)
     {
-        $users = Partecipant::latest()->get();
+        $partecipants = Partecipant::latest()->get();
 		if ($request->ajax() || $request->wantsJson()) {
     		return new JsonResponse($partecipants);
     	}
@@ -45,14 +46,14 @@ class PartecipantsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PartecipantRequest $request)
     {
        $input = $request->all();
 		$partecipant = Partecipant::create([
-            'name' => $input['nome'],
-			'surname' => $input['cognome'],
+            'name' => $input['name'],
+			'surname' => $input['surname'],
             'email' => $input['email'],
-            'phone number' => $input['telefono']
+            'phone' => $input['phone']
         ]);
 		
 		if ($request->ajax() || $request->wantsJson()) {
@@ -97,10 +98,10 @@ public function update(PartecipantRequest $request, Partecipant $partecipant)
     {
 		$input = $request->all();
 		$partecipant->update([
-            'name' => $input['nome'],
-			'surname' => $input['cognome'],
+            'nome' => $input['name'],
+			'cognome' => $input['surname'],
 			'email' => $input['email'],	
-            'phone number' => $input['telefono']
+            'telefono' => $input['phone']
         ]);
 		
 		

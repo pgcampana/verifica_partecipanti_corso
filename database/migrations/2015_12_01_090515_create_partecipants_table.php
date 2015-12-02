@@ -17,7 +17,7 @@ class CreatePartecipantsTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('email');
-            $table->integer('phone number');
+            $table->integer('phone');
             $table->timestamps();
         });
     }

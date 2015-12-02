@@ -16,6 +16,6 @@ $factory->define(App\Partecipant::class, function (Faker\Generator $faker) {
         'name' => $faker->name,
     	'surname' => $faker->lastName,
         'email' => $faker->email,
-    	'phone number' => $faker->phoneNumber,
+    	'phone' => $faker->phoneNumber,
     ];
 });
