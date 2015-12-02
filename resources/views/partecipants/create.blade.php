@@ -5,7 +5,7 @@ New partecipant
 @stop
 
 @section('content')
-<h1>New partecipant</h1>
+<h1>Inserimento nuovo partecipante</h1>
 <hr />
 {!! Form::model($partecipant = new \App\Partecipant, array('action' => 'PartecipantsController@index')) !!}
 	@include('partecipants.form', ['submitButtonText' => 'Save', 'create' => true])

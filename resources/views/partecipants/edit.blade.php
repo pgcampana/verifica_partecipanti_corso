@@ -5,7 +5,7 @@ Edit partecipant
 @stop
 
 @section('content')
-<h1>Edit partecipant </h1>
+<h1>Modifica dati partecipanti</h1>
 <hr />
 {!! Form::model($partecipant, ['method' => 'PATCH', 'action' => ['PartecipantsController@update', $partecipant->id]]) !!}
 	@include('partecipants.form', ['submitButtonText' => 'Update', 'create' => false])

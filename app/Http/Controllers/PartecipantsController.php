@@ -98,10 +98,10 @@ public function update(PartecipantRequest $request, Partecipant $partecipant)
     {
 		$input = $request->all();
 		$partecipant->update([
-            'nome' => $input['name'],
-			'cognome' => $input['surname'],
+            'name' => $input['name'],
+			'surname' => $input['surname'],
 			'email' => $input['email'],	
-            'telefono' => $input['phone']
+            'phone' => $input['phone']
         ]);
 		
 		

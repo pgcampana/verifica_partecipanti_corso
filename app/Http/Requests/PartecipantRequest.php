@@ -26,7 +26,7 @@ class PartecipantRequest extends Request
         return [
 			'name' => ['required', 'max:50'],
         	'surname' => ['required', 'max:50'],
-            'email' => ['required', 'email', 'unique:users' . ($this->method() == 'POST' ? '' : (',email,' . $this->route('users')->id))], 
+            'email' => ['required', 'email'], 
 			'phone' => ['required', 'min:8'],
         ];
     }
