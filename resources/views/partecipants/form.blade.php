@@ -8,11 +8,7 @@
 	</div>
 <div class="form-group">
 	{!! Form::label('email', 'email') !!}
-	@if ($create)
 	{!! Form::email('email', null, ['class' => 'form-control']) !!}
-	@else
-	{!! Form::email('email', null, ['class' => 'form-control', 'readonly' => true]) !!}
-	@endif
 </div>
 <div class="form-group">
 	{!! Form::label('phone', 'telefono') !!}
