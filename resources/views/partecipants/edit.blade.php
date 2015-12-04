@@ -14,3 +14,4 @@ Edit partecipant
 @include('errors.list')
 
 @stop
+

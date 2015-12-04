@@ -30,15 +30,23 @@
                 display: inline-block;
             }
 
-            .title {
-                font-size: 96px;
+            .h1 {
+                font-size: 128px;
             }
+            
+            .h2 {
+            	font-size: 44px;
+            }
+            .h3 {
+            	font-size: 36px;
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="h1">Laravel 5</div>
+                <div class="h2">verifica partecipanti corso</div>
+                <div class="h3">Pier Giuseppe Campana</div>
             </div>
         </div>
     </body>
